@@ -5,14 +5,19 @@ public class week3and4 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number: ");
-        int n = sc.nextInt();
+        System.out.print("Enter a number: ");
+        int number = sc.nextInt();
 
-        if (n >= 0) {
-            int sum = n * (n + 1) / 2;
-            System.out.println("The sum of " + n + " natural numbers is " + sum);
+        if (number >= 1) {
+            for (int i = 1; i <= number; i++) {
+                if (i % 2 == 0) {
+                    System.out.println(i + " is Even");
+                } else {
+                    System.out.println(i + " is Odd");
+                }
+            }
         } else {
-            System.out.println("The number " + n + " is not a natural number");
+            System.out.println("Please enter a natural number");
         }
     }
 }

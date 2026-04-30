@@ -8,23 +8,10 @@ public class week3and4 {
         System.out.print("Enter year: ");
         int year = sc.nextInt();
 
-        if (year < 1582) {
-            System.out.println("Year should be >= 1582");
-        } 
-        else {
-            if (year % 4 == 0) {
-                if (year % 100 == 0) {
-                    if (year % 400 == 0) {
-                        System.out.println("Year is a Leap Year");
-                    } else {
-                        System.out.println("Year is not a Leap Year");
-                    }
-                } else {
-                    System.out.println("Year is a Leap Year");
-                }
-            } else {
-                System.out.println("Year is not a Leap Year");
-            }
+        if (year >= 1582 && (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)) {
+            System.out.println("Year is a Leap Year");
+        } else {
+            System.out.println("Year is not a Leap Year");
         }
     }
 }

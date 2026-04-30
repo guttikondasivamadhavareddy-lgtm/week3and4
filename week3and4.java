@@ -5,21 +5,14 @@ public class week3and4 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number1: ");
-        int n1 = sc.nextInt();
+        System.out.print("Enter number: ");
+        int n = sc.nextInt();
 
-        System.out.print("Enter number2: ");
-        int n2 = sc.nextInt();
-
-        System.out.print("Enter number3: ");
-        int n3 = sc.nextInt();
-
-        boolean firstLargest = (n1 > n2 && n1 > n3);
-        boolean secondLargest = (n2 > n1 && n2 > n3);
-        boolean thirdLargest = (n3 > n1 && n3 > n2);
-
-        System.out.println("Is the first number the largest? " + firstLargest);
-        System.out.println("Is the second number the largest? " + secondLargest);
-        System.out.println("Is the third number the largest? " + thirdLargest);
+        if (n >= 0) {
+            int sum = n * (n + 1) / 2;
+            System.out.println("The sum of " + n + " natural numbers is " + sum);
+        } else {
+            System.out.println("The number " + n + " is not a natural number");
+        }
     }
 }

@@ -14,8 +14,12 @@ public class week3and4 {
         System.out.print("Enter number3: ");
         int n3 = sc.nextInt();
 
-        boolean isSmallest = (n1 < n2 && n1 < n3);
+        boolean firstLargest = (n1 > n2 && n1 > n3);
+        boolean secondLargest = (n2 > n1 && n2 > n3);
+        boolean thirdLargest = (n3 > n1 && n3 > n2);
 
-        System.out.println("Is the first number the smallest? " + isSmallest);
+        System.out.println("Is the first number the largest? " + firstLargest);
+        System.out.println("Is the second number the largest? " + secondLargest);
+        System.out.println("Is the third number the largest? " + thirdLargest);
     }
 }

@@ -5,11 +5,17 @@ public class week3and4 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number: ");
-        int number = sc.nextInt();
+        System.out.print("Enter number1: ");
+        int n1 = sc.nextInt();
 
-        boolean result = (number % 5 == 0);
+        System.out.print("Enter number2: ");
+        int n2 = sc.nextInt();
 
-        System.out.println("Is the number " + number + " divisible by 5? " + result);
+        System.out.print("Enter number3: ");
+        int n3 = sc.nextInt();
+
+        boolean isSmallest = (n1 < n2 && n1 < n3);
+
+        System.out.println("Is the first number the smallest? " + isSmallest);
     }
 }
